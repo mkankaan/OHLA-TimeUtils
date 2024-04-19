@@ -1,4 +1,4 @@
-package timeUtils;
+package org.example;
 
 public class TimeUtils {
 
