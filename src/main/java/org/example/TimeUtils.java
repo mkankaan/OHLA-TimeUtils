@@ -13,15 +13,21 @@ public class TimeUtils {
 
     public static String secToTime(int a) {
         int hh, mm, ss;
+        int input_ss = a;
 
-        if (a < 0 || a >= 32000) {
+        if (input_ss < 0) {
             return "-1";
         }
 
-        hh = a / 3600;
-        a = a - (3600 * hh);
-        mm = a / 60;
-        ss = a - (60 * mm);
+        if (input_ss >= 86400) {
+            int dd = input_ss / 86400;
+            input_ss -= dd*86400;
+        }
+
+        hh = input_ss / 3600;
+        input_ss -= (3600 * hh);
+        mm = input_ss / 60;
+        ss = input_ss - (60 * mm);
 
         String res = hh + ":";
         if (mm <= 10) {
