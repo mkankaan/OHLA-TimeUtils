@@ -11,6 +11,7 @@ public class TimeUtils {
         return 3600 * hh + 60 * mm + ss;
     }
 
+    // Metodia muutettu alkamaan alusta 24 tunnin jälkeen
     public static String secToTime(int a) {
         int hh, mm, ss;
         int input_ss = a;
