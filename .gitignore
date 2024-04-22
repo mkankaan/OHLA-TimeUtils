@@ -5,6 +5,12 @@ target/
 
 ### IntelliJ IDEA ###
 .idea/
+.idea/$PROJECT_FILE$
+.idea/encodings.xml
+.idea/misc.xml
+.idea/qaplug_profiles.xml
+.idea/.gitignore
+.idea/vcs.xml
 *.iws
 *.iml
 *.ipr
